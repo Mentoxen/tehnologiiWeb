@@ -1,0 +1,128 @@
+*{box-sizing: border-box}
+
+body, html {
+    padding: 0px;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(#9C27B0, #673AB7);
+    height: 100vh;
+    font-family: 'Roboto';
+}
+
+.login {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 11px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    font: 500 25px/30px 'Roboto';
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #57b846;
+    padding: 15px;
+    width: 100%;
+    display: block;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+figure {
+    margin: 0px;    
+}
+
+.login-image, form {
+    flex: 1;
+}
+
+.login-image svg {
+    max-width: 180px;
+    margin: 0 auto;
+    display: block;
+}
+
+.login form input:not([type="radio"]) {
+    display: block;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    background: #e6e6e6;
+    border-radius: 50px;
+    color: #888;
+}
+
+.radio-wrapper {
+    font-size: 14px;
+    line-height: 0;
+    margin-bottom: 15px;
+}
+
+.radio-wrapper input {
+    vertical-align: middle;
+    margin: 0px;
+    width: 15px;
+    height: 15px;
+}
+
+.radio-wrapper label + label {
+    margin-left: 15px;
+}
+
+.table-users {
+    padding: 150px 15px;
+    display: block;
+    margin: 0 auto;
+    max-width: 50%; 
+}
+
+.table-users table {
+    padding: 15px;
+    background: #fff;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    border-spacing: 0;
+}
+
+.table-users th {
+    text-align: left;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.table-users tr th:last-child,
+.table-users tr th:nth-last-child(2) {
+    text-align: center;
+}
+
+.table-users tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.table-users tr:nth-child(even) td {
+    border-bottom: 1px solid #eee;
+}
+
+.table-users td {
+    padding: 15px;
+}
+
